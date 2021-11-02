@@ -92,7 +92,8 @@ namespace WindowsFormsApp211103
                 //로그인
                 try
                 {
-                  
+                    new Form1().ShowDialog();
+                    this.Hide();
                 }
                 catch (Exception ex)
                 {
