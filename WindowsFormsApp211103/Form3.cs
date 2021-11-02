@@ -53,7 +53,7 @@ namespace WindowsFormsApp211103
 
             button2.Click += (sender, e) =>
             {
-                // 회원 정보 수정
+                // 회원 정보 및 보유 금액 수정
                 try
                 {
                     User user = DataManager.Users.Single(x => x.Id == int.Parse(textBox1.Text));

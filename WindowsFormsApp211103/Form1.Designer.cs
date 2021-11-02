@@ -32,10 +32,8 @@ namespace WindowsFormsApp211103
             this.components = new System.ComponentModel.Container();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.userBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.bookBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -47,18 +45,20 @@ namespace WindowsFormsApp211103
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.부품관리ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.moneyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.userBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.bookBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.isbnDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.publisherDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -69,13 +69,13 @@ namespace WindowsFormsApp211103
             this.borrowedAtDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.userBindingSource)).BeginInit();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bookBindingSource)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.userBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bookBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox4
@@ -103,10 +103,6 @@ namespace WindowsFormsApp211103
             this.dataGridView2.RowTemplate.Height = 23;
             this.dataGridView2.Size = new System.Drawing.Size(947, 210);
             this.dataGridView2.TabIndex = 1;
-            // 
-            // userBindingSource
-            // 
-            this.userBindingSource.DataSource = typeof(WindowsFormsApp211103.User);
             // 
             // groupBox3
             // 
@@ -139,10 +135,6 @@ namespace WindowsFormsApp211103
             this.dataGridView1.Size = new System.Drawing.Size(945, 210);
             this.dataGridView1.TabIndex = 0;
             // 
-            // bookBindingSource
-            // 
-            this.bookBindingSource.DataSource = typeof(WindowsFormsApp211103.Book);
-            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.button2);
@@ -158,7 +150,7 @@ namespace WindowsFormsApp211103
             this.groupBox1.Size = new System.Drawing.Size(359, 101);
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "대여 / 반납";
+            this.groupBox1.Text = "구매 / 취소";
             // 
             // button2
             // 
@@ -166,7 +158,7 @@ namespace WindowsFormsApp211103
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 24);
             this.button2.TabIndex = 10;
-            this.button2.Text = "반납";
+            this.button2.Text = "취소";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // button1
@@ -175,7 +167,7 @@ namespace WindowsFormsApp211103
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 9;
-            this.button1.Text = "대여";
+            this.button1.Text = "구매";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // textBox3
@@ -228,12 +220,12 @@ namespace WindowsFormsApp211103
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.label11);
             this.groupBox2.Controls.Add(this.label10);
+            this.groupBox2.Controls.Add(this.label4);
+            this.groupBox2.Controls.Add(this.label11);
             this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Location = new System.Drawing.Point(19, 40);
@@ -246,25 +238,16 @@ namespace WindowsFormsApp211103
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(127, 56);
+            this.label11.Location = new System.Drawing.Point(117, 54);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(44, 12);
             this.label11.TabIndex = 7;
             this.label11.Text = "label11";
             // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(127, 76);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(44, 12);
-            this.label10.TabIndex = 6;
-            this.label10.Text = "label10";
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(69, 38);
+            this.label9.Location = new System.Drawing.Point(67, 37);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(38, 12);
             this.label9.TabIndex = 5;
@@ -273,7 +256,7 @@ namespace WindowsFormsApp211103
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(97, 20);
+            this.label1.Location = new System.Drawing.Point(95, 19);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(38, 12);
             this.label1.TabIndex = 4;
@@ -282,25 +265,16 @@ namespace WindowsFormsApp211103
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 56);
+            this.label5.Location = new System.Drawing.Point(3, 54);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(121, 12);
             this.label5.TabIndex = 3;
-            this.label5.Text = "구매한 부품의 개수 : ";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 75);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(125, 12);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "연체 중인 도서의 수 : ";
+            this.label5.Text = "구매된 부품의 개수 : ";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 38);
+            this.label3.Location = new System.Drawing.Point(4, 37);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(65, 12);
             this.label3.TabIndex = 1;
@@ -332,6 +306,24 @@ namespace WindowsFormsApp211103
             this.menuStrip1.TabIndex = 8;
             this.menuStrip1.Text = "menuStrip1";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(3, 71);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(109, 12);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "남은 부품의 개수 : ";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(107, 71);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(44, 12);
+            this.label10.TabIndex = 9;
+            this.label10.Text = "label10";
+            // 
             // idDataGridViewTextBoxColumn
             // 
             this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
@@ -349,6 +341,14 @@ namespace WindowsFormsApp211103
             this.moneyDataGridViewTextBoxColumn.DataPropertyName = "Money";
             this.moneyDataGridViewTextBoxColumn.HeaderText = "보유 금액";
             this.moneyDataGridViewTextBoxColumn.Name = "moneyDataGridViewTextBoxColumn";
+            // 
+            // userBindingSource
+            // 
+            this.userBindingSource.DataSource = typeof(WindowsFormsApp211103.User);
+            // 
+            // bookBindingSource
+            // 
+            this.bookBindingSource.DataSource = typeof(WindowsFormsApp211103.Book);
             // 
             // isbnDataGridViewTextBoxColumn
             // 
@@ -420,16 +420,16 @@ namespace WindowsFormsApp211103
             this.Text = "Form1";
             this.groupBox4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.userBindingSource)).EndInit();
             this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bookBindingSource)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.userBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bookBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -452,11 +452,9 @@ namespace WindowsFormsApp211103
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.BindingSource userBindingSource;
@@ -466,6 +464,8 @@ namespace WindowsFormsApp211103
         private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn moneyDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DataGridViewTextBoxColumn isbnDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn publisherDataGridViewTextBoxColumn;

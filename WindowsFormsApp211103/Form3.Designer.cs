@@ -68,7 +68,7 @@ namespace WindowsFormsApp211103
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(71, 73);
+            this.textBox3.Location = new System.Drawing.Point(71, 104);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(148, 21);
             this.textBox3.TabIndex = 14;
@@ -76,7 +76,7 @@ namespace WindowsFormsApp211103
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 76);
+            this.label1.Location = new System.Drawing.Point(6, 107);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(57, 12);
             this.label1.TabIndex = 11;
@@ -84,7 +84,7 @@ namespace WindowsFormsApp211103
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(168, 153);
+            this.button3.Location = new System.Drawing.Point(262, 146);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 24);
             this.button3.TabIndex = 13;
@@ -93,16 +93,16 @@ namespace WindowsFormsApp211103
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(87, 153);
+            this.button2.Location = new System.Drawing.Point(86, 146);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 24);
+            this.button2.Size = new System.Drawing.Size(170, 24);
             this.button2.TabIndex = 10;
-            this.button2.Text = "회원 정보 변경";
+            this.button2.Text = "회원 정보 / 보유 금액 변경";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(6, 154);
+            this.button1.Location = new System.Drawing.Point(5, 147);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 9;
@@ -111,7 +111,7 @@ namespace WindowsFormsApp211103
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(71, 46);
+            this.textBox2.Location = new System.Drawing.Point(71, 62);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(148, 21);
             this.textBox2.TabIndex = 7;
@@ -119,7 +119,7 @@ namespace WindowsFormsApp211103
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(6, 49);
+            this.label7.Location = new System.Drawing.Point(6, 64);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(29, 12);
             this.label7.TabIndex = 5;
@@ -162,6 +162,7 @@ namespace WindowsFormsApp211103
             // 
             // button4
             // 
+            this.button4.Font = new System.Drawing.Font("굴림", 20F);
             this.button4.Location = new System.Drawing.Point(589, 334);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(159, 56);
