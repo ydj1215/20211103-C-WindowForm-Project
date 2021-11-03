@@ -91,7 +91,7 @@ namespace WindowsFormsApp211103
                         //파일에도 바뀐 내용을 저장
                         DataManager.Save();
 
-                        MessageBox.Show("\"" + book.Name + "\"이/가\"" + user.Name + "\"님께 구매되었습니다.");
+                        MessageBox.Show("\"" + book.Name + "\"이/가" + user.Name + "\"님께 구매되었습니다.");
 
                     }
                 }

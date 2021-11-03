@@ -149,7 +149,7 @@ namespace WindowsFormsApp211103
             this.groupBox4.Size = new System.Drawing.Size(384, 183);
             this.groupBox4.TabIndex = 10;
             this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "사용자 현황";
+            this.groupBox4.Text = "사용자 목록";
             // 
             // dataGridView1
             // 
