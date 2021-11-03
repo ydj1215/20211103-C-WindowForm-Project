@@ -43,6 +43,7 @@ namespace WindowsFormsApp211103
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button4 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.button5 = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -180,11 +181,22 @@ namespace WindowsFormsApp211103
             this.label2.TabIndex = 12;
             this.label2.Text = "컴퓨터 조립 프로그램";
             // 
+            // button5
+            // 
+            this.button5.Font = new System.Drawing.Font("굴림", 20F);
+            this.button5.Location = new System.Drawing.Point(18, 334);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(159, 56);
+            this.button5.TabIndex = 13;
+            this.button5.Text = "종료";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(781, 414);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.groupBox2);
@@ -216,5 +228,6 @@ namespace WindowsFormsApp211103
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button5;
     }
 }

@@ -184,8 +184,11 @@ namespace WindowsFormsApp211103
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Close();
-            System.Diagnostics.Process.GetCurrentProcess().Kill();
+            if (MessageBox.Show("정말로 로그아웃 하시겠습니까?", "로그아웃", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                Application.Exit();
+                Application.Restart();
+            }
         }
     }
 }

@@ -16,7 +16,7 @@ namespace WindowsFormsApp211103
         {
             InitializeComponent();
 
-            Text = "도서 관리";
+            Text = "부품 관리";
 
             dataGridView1.DataSource = DataManager.Books;
             dataGridView1.CurrentCellChanged += dataGridView1_CurrentCellChanged;
@@ -27,7 +27,7 @@ namespace WindowsFormsApp211103
                 {
                     if (DataManager.Books.Exists(x => x.Isbn == textBox1.Text))
                     {
-                        MessageBox.Show("이미 존재하는 도서입니다.");
+                        MessageBox.Show("이미 목록에 존재하는 부품입니다.");
                     }
                     else
                     {
@@ -69,7 +69,7 @@ namespace WindowsFormsApp211103
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("존재하지 않는 도서입니다.");
+                    MessageBox.Show("목록에 존재하지 않는 부품입니다.");
                 }
             };
 
@@ -87,7 +87,7 @@ namespace WindowsFormsApp211103
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("존재하지 않는 도서입니다.");
+                    MessageBox.Show("목록에 존재하지 않는 부품입니다.");
                 }
             };
 
@@ -97,7 +97,7 @@ namespace WindowsFormsApp211103
                 try
                 {
                     Book book = DataManager.Books.Single(x => x.Name == textBox5.Text);
-                    MessageBox.Show("존재하는 도서입니다.");
+                    MessageBox.Show("목록에 입력된 부품입니다.");
                     string str = book.Name + "";
                     string str2 = book.Page + "";
                     string str3 = book.Isbn + "";
@@ -106,7 +106,7 @@ namespace WindowsFormsApp211103
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("존재하지 않는 도서입니다.");
+                    MessageBox.Show("입력되지 않은 부품입니다.");
                 }
             };
         }

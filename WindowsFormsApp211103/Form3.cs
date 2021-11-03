@@ -100,6 +100,20 @@ namespace WindowsFormsApp211103
                     MessageBox.Show("존재하지 않는 사용자 입니다.");
                 }
             };
+
+            button5.Click += (sender, e) =>
+            {
+                //종료
+                try
+                {
+                    if (MessageBox.Show("정말로 프로그램을 종료하시겠습니까?", "종료", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                       Application.Exit();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("존재하지 않는 사용자 입니다.");
+                }
+            };
         }
 
         private void dataGridView1_CurrentCellChanged(Object sender, EventArgs e)
