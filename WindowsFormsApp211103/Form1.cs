@@ -93,6 +93,13 @@ namespace WindowsFormsApp211103
 
                         MessageBox.Show("\"" + book.Name + "\"이/가" + user.Name + "\"님께 구매되었습니다.");
 
+                        if(user.Money<0)
+                        {
+                            MessageBox.Show("보유 금액이 부족합니다!");
+                            string str = user.Money.ToString() + " 원 만큼의 금액이 부족합니다!";
+                            MessageBox.Show(str);
+                        }
+
                     }
                 }
                 catch (Exception ex)
@@ -173,6 +180,12 @@ namespace WindowsFormsApp211103
         private void 부품관리ToolStripMenuItem_Click(object sender, EventArgs e)
         {
            new Form2().ShowDialog();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Close();
+            System.Diagnostics.Process.GetCurrentProcess().Kill();
         }
     }
 }

@@ -20,8 +20,6 @@ namespace WindowsFormsApp211103
 
             dataGridView1.DataSource = DataManager.Books;
             dataGridView1.CurrentCellChanged += dataGridView1_CurrentCellChanged;
-
-            //람다식을 사용해 새로운 book객체를 만드는 방식
             button1.Click += (sender, e) =>
             {
                 //추가
@@ -86,6 +84,25 @@ namespace WindowsFormsApp211103
                     dataGridView1.DataSource = null;
                     dataGridView1.DataSource = DataManager.Books;
                     DataManager.Save();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("존재하지 않는 도서입니다.");
+                }
+            };
+
+            button4.Click += (sender, e) =>
+            {
+                //검색
+                try
+                {
+                    Book book = DataManager.Books.Single(x => x.Name == textBox5.Text);
+                    MessageBox.Show("존재하는 도서입니다.");
+                    string str = book.Name + "";
+                    string str2 = book.Page + "";
+                    string str3 = book.Isbn + "";
+                    MessageBox.Show(str + " 의 가격은 " + str2 + " 원이고 일련번호는 " + str3 + " 입니다." );
+
                 }
                 catch (Exception ex)
                 {
